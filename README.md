@@ -3,7 +3,7 @@
 # [Control of Dual-Sourcing Inventory Systems using Recurrent Neural Networks](https://doi.org/10.1287/ijoc.2022.0136)
 
 This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [General Public License v2.0](LICENSE).
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
 The software in this repository is a snapshot of the software that was used in the research reported 
 on in the paper [Control of Dual-Sourcing Inventory Systems using Recurrent Neural Networks](https://doi.org/10.1287/ijoc.2022.0136) by Lucas Böttcher, Thomas Asikis, and Ioannis Fragkos.
@@ -31,7 +31,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ## Description
 
-This project provides implementations of neural networks that control single and dual sourcing problems (with and without empirical demand data). 
+This project provides implementations of neural networks that control single-sourcing dynamics and dual-sourcing dynamics, with or without empirical demand data. 
 
 We summarize the main model parameters below.
 
@@ -51,7 +51,7 @@ We summarize the main model parameters below.
 <img width="800" src="optimization_schematic.png" alt="neural net schematic">
 </div>
 
-The above figure shows a schematic of solving discrete-time stochastic control problems with recurrent neural networks.
+The above figure shows a schematic of solving discrete-time stochastic control problems with recurrent neural networks. More information on implementation details are provided in our paper.
 
 ## Data
 
