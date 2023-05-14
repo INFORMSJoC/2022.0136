@@ -55,19 +55,29 @@ The above figure shows a schematic of solving discrete-time stochastic control p
 
 ## Data
 
-The directory `data/cdi_nnc/` contains data on dual sourcing costs associated with both capped dual index (CDI) and neural network policies. It also contains additional data on neural-network training runtimes and different data visualization scripts.
+The `data/cdi_nnc/` directory comprises data on dual sourcing costs for both capped dual-index (CDI) and neural-network policies. It also includes supplementary data on neural-network training runtimes and various data visualization scripts.
 
-In the directory `data/MSOM_data/`, we store the empirical demand data taken from Manary, Matthew P., and Sean P. Willems. "Data set: 187 weeks of customer forecasts and orders for microprocessors from intel corporation." Manufacturing & Service Operations Management 24.1 (2022): 682-689.
+In the `data/MSOM_data/` directory, we store the empirical demand data obtained from Manary, Matthew P., and Sean P. Willems. "Data set: 187 weeks of customer forecasts and orders for microprocessors from intel corporation." Manufacturing & Service Operations Management 24.1 (2022): 682-689.
 
 ## Code
 
-The directory `sourcing_models/` contains implementations of different dual sourcing heuristics (single index, dual index, capped-dual index, tailored-base surge). The files `sourcing_models/recursion_numba.py` and `sourcing_models/recursion_numba_state_output.py` provide dynamic program implementations with and without state output, respectively. We use the high-performance Python compiler Numba to speed-up the dynamic programming iterations.
+The `code/sourcing_models/` directory contains various implementations of dual sourcing heuristics, including single index, dual index, capped dual index, and tailored base surge. The file `code/sourcing_models/recursion_numba_state_output.py` offers a dynamic program solution for the dual-sourcing problem with fixed costs. To accelerate the dynamic programming iterations, we utilize the high-performance Python compiler ``Numba``.
 
-Trained neural networks are provided in `sourcing_models/trained_neural_nets`. These files can be used in transfer-learning tasks.
+To execute the program `recursion_numba_state_output.py` within the `code/sourcing_models/` directory, use the following command:
 
-Different neural-network controllers and inventory dynamics implementations (in pytorch) are stored in `neural_control/`.
+```shell
+python recursion_numba_state_output.py recursion_input_files/ds1_lr=2_b=95_h=5_u04.in
+```
 
-An optimization example that uses real-world data is available in `MSOM_data/`. 
+Here, `ds1_lr=2_b=95_h=5_u04.in` refers to a file that contains input parameters for the dynamic program.
+
+The `code/sourcing_models/trained_neural_nets` directory provides trained neural networks that can be employed for transfer-learning tasks.
+
+In the `code/neural_control/` directory, you can find different neural-network controllers and inventory dynamics implementations using ``PyTorch``. Specifically, long short-term memory and transformer implementations are accessible under `code/neural_control/experiments`.
+
+The `code/notebooks/` directory contains a collection of Jupyter notebooks designed for conducting numerical experiments related to controlling single-sourcing dynamics and dual-sourcing dynamics, with or without fixed costs. These notebooks encompass various neural-network controllers and also include comparisons with capped dual-index policies.
+
+For an optimization example utilizing empirical demand data, refer to the `code/MSOM_data/` directory.
 
 ## Ongoing Development
 
