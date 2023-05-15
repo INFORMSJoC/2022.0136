@@ -47,11 +47,11 @@ We summarize the main model parameters below.
 | `lr`      | int     | regular order lead time                                       |
 | `T`       | int     | number of simulation periods                                  |
 
+The figure below shows a schematic of solving discrete-time stochastic control problems with recurrent neural networks. More information on implementation details are provided in our paper.
+
 <div align="center">
 <img width="800" src="optimization_schematic.png" alt="neural net schematic">
 </div>
-
-The above figure shows a schematic of solving discrete-time stochastic control problems with recurrent neural networks. More information on implementation details are provided in our paper.
 
 ## Data
 
