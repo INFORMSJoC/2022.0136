@@ -22,7 +22,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
 @article{bottcher2023control,
   author =        {B{\"o}ttcher, Lucas and Asikis, Thomas and Fragkos, Ioannis},
   publisher =     {INFORMS Journal on Computing},
-  title =         {Control of Dual-Sourcing Inventory Systems using Recurrent Neural Networks},
+  title =         {Control of Dual-Sourcing Inventory Systems using Recurrent Neural Networks v2022.0136},
   year =          {2023},
   doi =           {10.1287/ijoc.2022.0136.cd},
   note =          {Available for download at \url{https://github.com/INFORMSJoC/2022.0136}},
