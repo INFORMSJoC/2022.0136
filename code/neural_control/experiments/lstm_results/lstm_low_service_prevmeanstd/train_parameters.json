@@ -1,0 +1,16 @@
+{
+    "fig_update_frequency": 100,
+    "initial_minibatch_size": 128,
+    "minibatch_size": 128,
+    "n_epochs": 5000,
+    "optimizer_params": {
+        "lr": 0.001
+    },
+    "optimizer_reset_frequency": 1000,
+    "optimizer_type": "torch.optim.RMSprop",
+    "performance_hist_window": 5,
+    "resampling_frequency": 1000,
+    "reset_to_best_tolerance_rate": 2.0,
+    "use_progress": true,
+    "warmup_epochs": 5000
+}

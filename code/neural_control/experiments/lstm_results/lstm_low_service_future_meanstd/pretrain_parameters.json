@@ -1,0 +1,9 @@
+{
+    "N": 16,
+    "logging_frequency": 10,
+    "lr": 0.001,
+    "n_epochs": 10,
+    "optimizer_type": "torch.optim.RMSprop",
+    "qe_qr_loss_ratio": 0.001,
+    "resampling_freq": 1
+}

@@ -1,0 +1,16 @@
+{
+    "learning_rate": 0.0007,
+    "minibatch_size": 32,
+    "no_validation_period": 100,
+    "optimizer_reset_frequency": 50,
+    "optimizer_type": "torch.optim.RMSprop",
+    "pretrain_learning_rate": 0.0007,
+    "pretrain_minibatch_size": 32,
+    "pretrain_no_validation_period": 150,
+    "pretrain_optimizer_reset_frequency": 50,
+    "pretrain_samples": 10,
+    "pretrain_total_epochs": 200,
+    "pretrain_val_frequency": 50,
+    "total_epochs": 1500,
+    "val_frequency": 50
+}
